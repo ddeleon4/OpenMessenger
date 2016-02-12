@@ -1,4 +1,4 @@
-package io.github.ddeleon4.openmessenger;
+package io.github.ddeleon4.openmessenger.userinterface;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,6 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import io.github.ddeleon4.openmessenger.R;
 
 public class StartActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
