@@ -13,29 +13,31 @@
 *   limitations under the License.
 * */
 
-package io.github.ddeleon4.openmessenger.database;
+package io.github.ddeleon4.openmessenger.adapters;
 
 import android.content.Context;
-
-import com.android.messaging.mmslib.pdu.NotificationInd;
-import com.android.messaging.mmslib.pdu.RetrieveConf;
-import com.android.messaging.mmslib.pdu.SendReq;
+import android.database.Cursor;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CursorAdapter;
 
 /**
- * Manages the data in the device's Telephony MMS tables
+ * Adapter for the main class which displays all the SMS and MMS threads.
  */
-public class MmsDatabaseManager {
-    private static final String TAG = "MmsDatabaseManger";
+public class MainAdapter extends CursorAdapter{
+    private static final String TAG = "MainAdapter";
 
-    public static void storeMms(Context context, NotificationInd nInd){
-        /*TODO*/
+    public MainAdapter(Context context, Cursor c, boolean autoRequery) {
+        super(context, c, autoRequery);
     }
 
-    public static void storeMms(Context context, RetrieveConf rConf){
-        /*TODO*/
+    @Override
+    public View newView(Context context, Cursor cursor, ViewGroup parent) {
+        return null;
     }
 
-    public static void storeMms(Context context, SendReq sReq){
-        /*TODO*/
+    @Override
+    public void bindView(View view, Context context, Cursor cursor) {
+
     }
 }

@@ -15,27 +15,21 @@
 
 package io.github.ddeleon4.openmessenger.database;
 
-import android.content.Context;
-
-import com.android.messaging.mmslib.pdu.NotificationInd;
-import com.android.messaging.mmslib.pdu.RetrieveConf;
-import com.android.messaging.mmslib.pdu.SendReq;
+import java.security.Provider;
 
 /**
- * Manages the data in the device's Telephony MMS tables
+ * File provider which serves MMS part files
  */
-public class MmsDatabaseManager {
-    private static final String TAG = "MmsDatabaseManger";
-
-    public static void storeMms(Context context, NotificationInd nInd){
-        /*TODO*/
-    }
-
-    public static void storeMms(Context context, RetrieveConf rConf){
-        /*TODO*/
-    }
-
-    public static void storeMms(Context context, SendReq sReq){
-        /*TODO*/
+public class MmsProvider extends Provider {
+    /**
+     * Constructs a new instance of {@code Provider} with its name, version and
+     * description.
+     *
+     * @param name    the name of the provider.
+     * @param version the version of the provider.
+     * @param info
+     */
+    protected MmsProvider(String name, double version, String info) {
+        super(name, version, info);
     }
 }
